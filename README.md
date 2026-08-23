@@ -1,5 +1,7 @@
 # Personalised Vulnerability Triage
 
+🔗 **Live web demo:** https://nexora-ai-hackathongit-lulvaojxs5lwccw8vd25dw.streamlit.app/
+
 Turns public vulnerability data into a ranked top 5 that a non-expert at a
 small organisation can understand and act on. Built against the **real
 organiser-supplied starter pack** (`vulnerabilities.csv`, `profiles.json`,
