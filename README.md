@@ -1,11 +1,21 @@
 # Personalised Vulnerability Triage
 
-🔗 **Live web demo:** https://nexora-ai-hackathongit-lulvaojxs5lwccw8vd25dw.streamlit.app/
-
 Turns public vulnerability data into a ranked top 5 that a non-expert at a
 small organisation can understand and act on. Built against the **real
 organiser-supplied starter pack** (`vulnerabilities.csv`, `profiles.json`,
 `gold_set.csv`).
+
+## Two ways to try this
+
+**1. Python CLI (this repo)** — the validated engine, tested against real practitioner rankings.
+```bash
+python main.py --list-orgs
+python main.py --org ORG-001
+python main.py --org ORG-003 --negative-test
+```
+
+**2. Live web demo** — a browser-based version built by Cianaa Chris Evangelin:
+🔗 https://nexora-ai-hackathongit-lulvaojxs5lwccw8vd25dw.streamlit.app/
 
 ## Quick start (under 5 minutes)
 
@@ -153,6 +163,8 @@ LOAD -> SCORE -> RANK -> EXPLAIN -> PRESENT
 - No AI/LLM phrasing is used — every sentence is template-based directly
   from record fields and each org's own declared weights, so nothing is
   invented, at the cost of less varied language.
+  
+  - The live web demo (Streamlit) is a separate implementation built by a teammate and may use different scoring logic or a different subset of the data than this validated CLI engine — if the two show different rankings for the same organisation, this repo's `engine.py` is the one reverse-engineered and validated against `gold_set.csv`.
 
 ## Project structure
 
