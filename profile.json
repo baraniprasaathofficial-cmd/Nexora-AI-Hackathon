@@ -1,0 +1,33 @@
+[
+  {
+    "profile_id": "college_01",
+    "name": "Greenfield Community College",
+    "sector": "education",
+    "technologies": [
+      {
+        "vendor": "apache",
+        "product": "http_server",
+        "version": "2.4.51",
+        "service": "student portal",
+        "exposure": "internet-facing",
+        "importance": "critical"
+      },
+      {
+        "vendor": "php",
+        "product": "php",
+        "version": "8.0.20",
+        "service": "web application backend",
+        "exposure": "internet-facing",
+        "importance": "high"
+      },
+      {
+        "vendor": "mysql",
+        "product": "mysql",
+        "version": "8.0.28",
+        "service": "student records database",
+        "exposure": "internal",
+        "importance": "high"
+      }
+    ]
+  }
+]
